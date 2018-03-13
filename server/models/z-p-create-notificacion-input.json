@@ -1,0 +1,20 @@
+{
+  "name": "zPCreateNotificacionInput",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "afiliado": {
+      "type": "AfiliadoPension"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

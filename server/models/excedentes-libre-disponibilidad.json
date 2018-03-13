@@ -1,0 +1,44 @@
+{
+  "name": "ExcedentesLibreDisponibilidad",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "valorNetoRecibir": {
+      "type": "number"
+    },
+    "rendimientos": {
+      "type": "number"
+    },
+    "valorNeto": {
+      "type": "number"
+    },
+    "descuentoFSP": {
+      "type": "number"
+    },
+    "valor": {
+      "type": "number"
+    },
+    "descuentoSalud": {
+      "type": "number"
+    },
+    "retencionFuente": {
+      "type": "number"
+    },
+    "valorMesada": {
+      "type": "number"
+    },
+    "valorRetroActivo": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

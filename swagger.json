@@ -1,0 +1,486 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"version": "1.0.0",
+		"title": "Service_ADV_PEN_zCRUDforSwagger",
+		"description": "Microservice definition for Service_ADV_PEN_zCRUDforSwagger",
+		"contact": {
+			"email": "bsuarez@vc-soft.com"
+		},
+		"license": {
+			"name": "Apache2.0",
+			"url": "http: //www.apache.org/licenses/LICENSE-2.0.html"
+		}
+	},
+	"host": "localhost: 8080",
+	"basePath": "/v1",
+	"schemes": ["http"],
+	"paths": {
+		"/ADV_PEN_zCRUDforSwagger/zPReadAfiliado": {
+			"post": {
+				"tags": ["zPReadAfiliado"],
+				"operationId": "ADV_PEN_zCRUDforSwagger_zPReadAfiliadoId",
+				"consumes": ["application/json",
+				"application/xml"],
+				"produces": ["application/xml",
+				"application/json"],
+				"parameters": [{
+					"in": "body",
+					"name": "body",
+					"description": "zPReadAfiliado parameters",
+					"required": true,
+					"schema": {
+						"$ref": "#/definitions/zPReadAfiliadoInput"
+					}
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation",
+						"schema": {
+							"$ref": "#/definitions/zPReadAfiliadoOutput"
+						}
+					},
+					"405": {
+						"description": "Invalid input"
+					}
+				}
+			}
+		},
+		"/ADV_PEN_zCRUDforSwagger/zPCreateNotificacion": {
+			"post": {
+				"tags": ["zPCreateNotificacion"],
+				"operationId": "ADV_PEN_zCRUDforSwagger_zPCreateNotificacionId",
+				"consumes": ["application/json",
+				"application/xml"],
+				"produces": ["application/xml",
+				"application/json"],
+				"parameters": [{
+					"in": "body",
+					"name": "body",
+					"description": "zPCreateNotificacion parameters",
+					"required": true,
+					"schema": {
+						"$ref": "#/definitions/zPCreateNotificacionInput"
+					}
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation",
+						"schema": {
+							"$ref": "#/definitions/zPCreateNotificacionOutput"
+						}
+					},
+					"405": {
+						"description": "Invalid input"
+					}
+				}
+			}
+		},
+		"/ADV_PEN_zCRUDforSwagger/zPDeleteEmpleador": {
+			"post": {
+				"tags": ["zPDeleteEmpleador"],
+				"operationId": "ADV_PEN_zCRUDforSwagger_zPDeleteEmpleadorId",
+				"consumes": ["application/json",
+				"application/xml"],
+				"produces": ["application/xml",
+				"application/json"],
+				"parameters": [{
+					"in": "body",
+					"name": "body",
+					"description": "zPDeleteEmpleador parameters",
+					"required": true,
+					"schema": {
+						"$ref": "#/definitions/zPDeleteEmpleadorInput"
+					}
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation",
+						"schema": {
+							"$ref": "#/definitions/zPDeleteEmpleadorOutput"
+						}
+					},
+					"405": {
+						"description": "Invalid input"
+					}
+				}
+			}
+		},
+		"/ADV_PEN_zCRUDforSwagger/zPUpdateSolicitud": {
+			"post": {
+				"tags": ["zPUpdateSolicitud"],
+				"operationId": "ADV_PEN_zCRUDforSwagger_zPUpdateSolicitudId",
+				"consumes": ["application/json",
+				"application/xml"],
+				"produces": ["application/xml",
+				"application/json"],
+				"parameters": [{
+					"in": "body",
+					"name": "body",
+					"description": "zPUpdateSolicitud parameters",
+					"required": true,
+					"schema": {
+						"$ref": "#/definitions/zPUpdateSolicitudInput"
+					}
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation",
+						"schema": {
+							"$ref": "#/definitions/zPUpdateSolicitudOutput"
+						}
+					},
+					"405": {
+						"description": "Invalid input"
+					}
+				}
+			}
+		}
+	},
+	"definitions": {
+		"zPReadAfiliadoInput": {
+			"type": "object",
+			"properties": {
+				"documentoId": {
+					"type": "string"
+				}
+			}
+		},
+		"String500": {
+			"maxLength": 500,
+			"minLength": 0,
+			"type": "string"
+		},
+		"String128": {
+			"maxLength": 128,
+			"minLength": 0,
+			"type": "string"
+		},
+		"AfiliadoPension": {
+			"type": "object",
+			"properties": {
+				"usuarioModificacion": {
+					"type": "string"
+				},
+				"nombreCompleto": {
+					"$ref": "#/definitions/String500"
+				},
+				"fechaNacimiento": {
+					"type": "string",
+					"format": "date-time"
+				},
+				"primerNombre": {
+					"$ref": "#/definitions/String128"
+				},
+				"segundoApellido": {
+					"$ref": "#/definitions/String128"
+				},
+				"genero": {
+					"type": "string"
+				},
+				"estado": {
+					"type": "string"
+				},
+				"primerApellido": {
+					"$ref": "#/definitions/String128"
+				},
+				"oid": {
+					"type": "string"
+				},
+				"empleadorId": {
+					"type": "string"
+				},
+				"fechaCreacion": {
+					"type": "string",
+					"format": "date-time"
+				},
+				"fechaModificacion": {
+					"type": "string",
+					"format": "date-time"
+				},
+				"segundoNombre": {
+					"$ref": "#/definitions/String128"
+				},
+				"tipoId": {
+					"type": "string"
+				},
+				"numeroId": {
+					"type": "string"
+				}
+			}
+		},
+		"zPReadAfiliadoOutput": {
+			"type": "object",
+			"properties": {
+				"afiliado": {
+					"$ref": "#/definitions/AfiliadoPension"
+				}
+			}
+		},
+		"zPCreateNotificacionInput": {
+			"type": "object",
+			"properties": {
+				"id": {
+					"type": "string"
+				},
+				"afiliado": {
+					"$ref": "#/definitions/AfiliadoPension"
+				}
+			}
+		},
+		"String36": {
+			"maxLength": 36,
+			"minLength": 0,
+			"type": "string"
+		},
+		"String250": {
+			"maxLength": 250,
+			"minLength": 0,
+			"type": "string"
+		},
+		"ExcedentesLibreDisponibilidad": {
+			"type": "object",
+			"properties": {
+				"id": {
+					"type": "string"
+				},
+				"valorNetoRecibir": {
+					"type": "number"
+				},
+				"rendimientos": {
+					"type": "number"
+				},
+				"valorNeto": {
+					"type": "number"
+				},
+				"descuentoFSP": {
+					"type": "number"
+				},
+				"valor": {
+					"type": "number"
+				},
+				"descuentoSalud": {
+					"type": "number"
+				},
+				"retencionFuente": {
+					"type": "number"
+				},
+				"valorMesada": {
+					"type": "number"
+				},
+				"valorRetroActivo": {
+					"type": "number"
+				}
+			}
+		},
+		"ResultadoAnalisisPension": {
+			"type": "object",
+			"properties": {
+				"otrasSemanas": {
+					"type": "number"
+				},
+				"aseguradora": {
+					"$ref": "#/definitions/String250"
+				},
+				"entidadQuePensiona": {
+					"$ref": "#/definitions/String128"
+				},
+				"fechaInicioRetroActivo": {
+					"type": "string",
+					"format": "date-time"
+				},
+				"detalle": {
+					"type": "string"
+				},
+				"express": {
+					"type": "boolean"
+				},
+				"numeroMesadas": {
+					"type": "number"
+				},
+				"valorMesadaActual": {
+					"type": "number"
+				},
+				"oid": {
+					"$ref": "#/definitions/String36"
+				},
+				"valorMesadaELD": {
+					"type": "number"
+				},
+				"edadDiaAnalisis": {
+					"type": "integer"
+				},
+				"semanasAdicionales": {
+					"type": "number"
+				},
+				"fechaFinRetroActivo": {
+					"type": "string",
+					"format": "date-time"
+				},
+				"fechaCreacion": {
+					"type": "string",
+					"format": "date-time"
+				},
+				"fechaModificacion": {
+					"type": "string",
+					"format": "date-time"
+				},
+				"analista": {
+					"type": "string"
+				},
+				"valorDescuentoFSP": {
+					"type": "number"
+				},
+				"encabezado": {
+					"type": "string"
+				},
+				"saldoCuentaAhorroIndividual": {
+					"type": "number"
+				},
+				"usuarioModificacion": {
+					"type": "string"
+				},
+				"semanasFaltantesGPM": {
+					"type": "number"
+				},
+				"fechaReconocimiento": {
+					"type": "string",
+					"format": "date-time"
+				},
+				"semanasFaltantesParaExcluido": {
+					"type": "number"
+				},
+				"ingresos": {
+					"type": "number"
+				},
+				"aportesVoluntarios": {
+					"type": "number"
+				},
+				"excedentes": {
+					"$ref": "#/definitions/ExcedentesLibreDisponibilidad"
+				},
+				"valorNetoMesada": {
+					"type": "number"
+				},
+				"fechaRedencionNormalBono": {
+					"type": "string",
+					"format": "date-time"
+				},
+				"edadDiaRedencion": {
+					"type": "integer"
+				},
+				"capitalRequerido70": {
+					"type": "number"
+				},
+				"edadDia01041994": {
+					"type": "integer"
+				},
+				"valorRetroActivo": {
+					"type": "number"
+				},
+				"totalSemanasCotizadas": {
+					"type": "number"
+				},
+				"IBLAnalisis": {
+					"type": "number"
+				},
+				"nombreCuponesBono": {
+					"type": "string"
+				},
+				"valorDescuentoSalud": {
+					"type": "number"
+				}
+			}
+		},
+		"SolicitudPension": {
+			"type": "object",
+			"properties": {
+				"afiliado": {
+					"$ref": "#/definitions/AfiliadoPension"
+				},
+				"oficinaRadicacion": {
+					"type": "string"
+				},
+				"estadoSolicitud": {
+					"type": "string"
+				},
+				"usuarioModificacion": {
+					"type": "string"
+				},
+				"fechaVencimientoLegal": {
+					"type": "string",
+					"format": "date-time"
+				},
+				"subtipoPrestacion": {
+					"type": "string"
+				},
+				"fechaRadicacion": {
+					"type": "string",
+					"format": "date-time"
+				},
+				"tipoAccionLegal": {
+					"type": "string"
+				},
+				"condicionEspecial": {
+					"type": "string"
+				},
+				"aplicaResolucion3023": {
+					"type": "boolean"
+				},
+				"oid": {
+					"$ref": "#/definitions/String36"
+				},
+				"fechaCreacion": {
+					"type": "string",
+					"format": "date-time"
+				},
+				"fechaModificacion": {
+					"type": "string",
+					"format": "date-time"
+				},
+				"resultadoAnalisis": {
+					"$ref": "#/definitions/ResultadoAnalisisPension"
+				},
+				"tipoPrestacion": {
+					"type": "string"
+				}
+			}
+		},
+		"zPCreateNotificacionOutput": {
+			"type": "object",
+			"properties": {
+				"solicitud": {
+					"$ref": "#/definitions/SolicitudPension"
+				}
+			}
+		},
+		"zPDeleteEmpleadorInput": {
+			"type": "object",
+			"properties": {
+				"empleadorId": {
+					"type": "string"
+				}
+			}
+		},
+		"zPDeleteEmpleadorOutput": {
+			"type": "object",
+			"properties": {
+				
+			}
+		},
+		"zPUpdateSolicitudInput": {
+			"type": "object",
+			"properties": {
+				"solicitudId": {
+					"type": "string"
+				}
+			}
+		},
+		"zPUpdateSolicitudOutput": {
+			"type": "object",
+			"properties": {
+				
+			}
+		}
+	}
+}

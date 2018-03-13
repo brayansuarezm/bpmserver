@@ -1,0 +1,63 @@
+{
+  "name": "SolicitudPension",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "afiliado": {
+      "type": "AfiliadoPension"
+    },
+    "oficinaRadicacion": {
+      "type": "string"
+    },
+    "estadoSolicitud": {
+      "type": "string"
+    },
+    "usuarioModificacion": {
+      "type": "string"
+    },
+    "fechaVencimientoLegal": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "subtipoPrestacion": {
+      "type": "string"
+    },
+    "fechaRadicacion": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "tipoAccionLegal": {
+      "type": "string"
+    },
+    "condicionEspecial": {
+      "type": "string"
+    },
+    "aplicaResolucion3023": {
+      "type": "boolean"
+    },
+    "oid": {
+      "type": "string"
+    },
+    "fechaCreacion": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "fechaModificacion": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "resultadoAnalisis": {
+      "type": "ResultadoAnalisisPension"
+    },
+    "tipoPrestacion": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

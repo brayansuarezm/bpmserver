@@ -1,0 +1,17 @@
+{
+  "name": "zPCreateNotificacionOutput",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "solicitud": {
+      "type": "SolicitudPension"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

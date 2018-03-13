@@ -1,0 +1,68 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "swagger_v1": {
+    "dataSource": null,
+    "public": true
+  },
+  "zPReadAfiliadoInput": {
+    "dataSource": null,
+    "public": true
+  },
+  "AfiliadoPension": {
+    "dataSource": null,
+    "public": true
+  },
+  "zPReadAfiliadoOutput": {
+    "dataSource": null,
+    "public": true
+  },
+  "zPCreateNotificacionInput": {
+    "dataSource": null,
+    "public": true
+  },
+  "ExcedentesLibreDisponibilidad": {
+    "dataSource": null,
+    "public": true
+  },
+  "ResultadoAnalisisPension": {
+    "dataSource": null,
+    "public": true
+  },
+  "SolicitudPension": {
+    "dataSource": null,
+    "public": true
+  },
+  "zPCreateNotificacionOutput": {
+    "dataSource": null,
+    "public": true
+  },
+  "zPDeleteEmpleadorInput": {
+    "dataSource": null,
+    "public": true
+  },
+  "zPDeleteEmpleadorOutput": {
+    "dataSource": null,
+    "public": true
+  },
+  "zPUpdateSolicitudInput": {
+    "dataSource": null,
+    "public": true
+  },
+  "zPUpdateSolicitudOutput": {
+    "dataSource": null,
+    "public": true
+  }
+}

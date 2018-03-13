@@ -1,0 +1,17 @@
+{
+  "name": "zPReadAfiliadoOutput",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "afiliado": {
+      "type": "AfiliadoPension"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

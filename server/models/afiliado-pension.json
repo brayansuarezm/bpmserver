@@ -1,0 +1,62 @@
+{
+  "name": "AfiliadoPension",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "usuarioModificacion": {
+      "type": "string"
+    },
+    "nombreCompleto": {
+      "type": "string"
+    },
+    "fechaNacimiento": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "primerNombre": {
+      "type": "string"
+    },
+    "segundoApellido": {
+      "type": "string"
+    },
+    "genero": {
+      "type": "string"
+    },
+    "estado": {
+      "type": "string"
+    },
+    "primerApellido": {
+      "type": "string"
+    },
+    "oid": {
+      "type": "string"
+    },
+    "empleadorId": {
+      "type": "string"
+    },
+    "fechaCreacion": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "fechaModificacion": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "segundoNombre": {
+      "type": "string"
+    },
+    "tipoId": {
+      "type": "string"
+    },
+    "numeroId": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

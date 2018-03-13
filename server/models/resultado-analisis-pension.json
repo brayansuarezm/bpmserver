@@ -1,0 +1,128 @@
+{
+  "name": "ResultadoAnalisisPension",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "otrasSemanas": {
+      "type": "number"
+    },
+    "aseguradora": {
+      "type": "string"
+    },
+    "entidadQuePensiona": {
+      "type": "string"
+    },
+    "fechaInicioRetroActivo": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "detalle": {
+      "type": "string"
+    },
+    "express": {
+      "type": "boolean"
+    },
+    "numeroMesadas": {
+      "type": "number"
+    },
+    "valorMesadaActual": {
+      "type": "number"
+    },
+    "oid": {
+      "type": "string"
+    },
+    "valorMesadaELD": {
+      "type": "number"
+    },
+    "edadDiaAnalisis": {
+      "type": "number"
+    },
+    "semanasAdicionales": {
+      "type": "number"
+    },
+    "fechaFinRetroActivo": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "fechaCreacion": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "fechaModificacion": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "analista": {
+      "type": "string"
+    },
+    "valorDescuentoFSP": {
+      "type": "number"
+    },
+    "encabezado": {
+      "type": "string"
+    },
+    "saldoCuentaAhorroIndividual": {
+      "type": "number"
+    },
+    "usuarioModificacion": {
+      "type": "string"
+    },
+    "semanasFaltantesGPM": {
+      "type": "number"
+    },
+    "fechaReconocimiento": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "semanasFaltantesParaExcluido": {
+      "type": "number"
+    },
+    "ingresos": {
+      "type": "number"
+    },
+    "aportesVoluntarios": {
+      "type": "number"
+    },
+    "excedentes": {
+      "type": "ExcedentesLibreDisponibilidad"
+    },
+    "valorNetoMesada": {
+      "type": "number"
+    },
+    "fechaRedencionNormalBono": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "edadDiaRedencion": {
+      "type": "number"
+    },
+    "capitalRequerido70": {
+      "type": "number"
+    },
+    "edadDia01041994": {
+      "type": "number"
+    },
+    "valorRetroActivo": {
+      "type": "number"
+    },
+    "totalSemanasCotizadas": {
+      "type": "number"
+    },
+    "IBLAnalisis": {
+      "type": "number"
+    },
+    "nombreCuponesBono": {
+      "type": "string"
+    },
+    "valorDescuentoSalud": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
