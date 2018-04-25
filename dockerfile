@@ -1,11 +1,7 @@
 FROM node:carbon
-
-WORKDIR /app
-
-ADD . /app
-
+WORKDIR /usr/src/app
+COPY package*.json ./
 RUN npm install
-RUN npm install -g strongloop
-
-EXPOSE 80
-CMD ["node", "."]
+COPY . .
+EXPOSE 3000
+CMD ["npm","start"]
